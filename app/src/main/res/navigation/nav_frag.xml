@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_frag"
+    app:startDestination="@id/bookMarkFrag">
+
+    <fragment
+        android:id="@+id/bookMarkFrag"
+        android:name="com.app.weatherreport.modules.bookmark.BookMarkFrag"
+        android:label="BookMarkFrag" >
+        <action
+            android:id="@+id/action_bookMarkFrag_to_viewPlacesFrag"
+            app:destination="@id/viewPlacesFrag" />
+        <argument
+            android:name="selected_data"
+            app:argType="com.app.weatherreport.db.BookMarkedDataModel"/>
+    </fragment>
+    <fragment
+        android:id="@+id/viewPlacesFrag"
+        android:name="com.app.weatherreport.modules.place.ViewPlacesFrag"
+        android:label="ViewPlacesFrag" />
+</navigation>

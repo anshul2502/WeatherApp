@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">WeatherReport</string>
+    <string name="google_maps_api_key">AIzaSyBD5Ou0PAt2Gq4SQgAORfJ-grdW0CPm-nY</string>
+    <string name="area_detail">Area Detail</string>
+    <string name="country_name">Country Name: %1$s</string>
+    <string name="description">Description: %1$s</string>
+    <string name="place_name">City Name: %1$s</string>
+    <string name="forecast_report">Forecast Report</string>
+    <string name="temperature_report">Temperature Report</string>
+    <string name="min_temperature">Min Temperature: %1$s</string>
+    <string name="max_temperature">Max Temperature: %1$s</string>
+    <string name="wind_report">Wind Report</string>
+    <string name="str_wait">Please Wait Loading Data</string>
+    <string name="wind_speed">Speed: %1$s</string>
+    <string name="humidity">Humidity: %1$s</string>
+</resources>
