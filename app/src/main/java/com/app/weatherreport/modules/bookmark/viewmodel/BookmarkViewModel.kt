@@ -1,4 +1,4 @@
-package com.app.weatherreport.modules.bookmark
+package com.app.weatherreport.modules.bookmark.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel

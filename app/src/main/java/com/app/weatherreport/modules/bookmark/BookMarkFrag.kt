@@ -6,8 +6,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
-import androidx.appcompat.widget.SearchView
 import androidx.core.os.bundleOf
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
@@ -20,6 +18,7 @@ import com.app.weatherreport.R
 import com.app.weatherreport.databinding.BookmarkBinding
 import com.app.weatherreport.db.BookMarkedDataModel
 import com.app.weatherreport.modules.bookmark.adapter.BookmarksAdapter
+import com.app.weatherreport.modules.bookmark.viewmodel.BookmarkViewModel
 import net.simplifiedcoding.ui.movies.RecyclerViewClickListener
 
 class BookMarkFrag:BaseFragment(),RecyclerViewClickListener {
@@ -27,7 +26,7 @@ class BookMarkFrag:BaseFragment(),RecyclerViewClickListener {
     private lateinit var bookmarkBinding:BookmarkBinding
     private lateinit var mContext: Context
     private var views: View? = null
-    private lateinit var bookmarkViewModel:BookmarkViewModel
+    private lateinit var bookmarkViewModel: BookmarkViewModel
     private lateinit var adapter:BookmarksAdapter
     private var navController: NavController?= null
 
@@ -44,6 +43,7 @@ class BookMarkFrag:BaseFragment(),RecyclerViewClickListener {
            // views = inflater.inflate(R.layout.bookmark, container, false)
             bookmarkBinding= DataBindingUtil.inflate(layoutInflater, R.layout.bookmark, container, false)
             views = bookmarkBinding.root
+            setHasOptionsMenu(false)
         }
         return views
     }
